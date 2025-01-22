@@ -1,3 +1,6 @@
+# Global variable for folder paths
+$BasePath = "C:\Users\tashr\OneDrive\Desktop\Automations\Cleaner"
+
 # Clear temp folders
 Get-ChildItem -Path "C:\Windows\Temp\*" -Recurse -Force | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue
 Get-ChildItem -Path "$Env:Temp\*" -Recurse -Force | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue
